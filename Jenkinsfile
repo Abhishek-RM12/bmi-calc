@@ -1,10 +1,9 @@
 pipeline {
   agent any
-  tools { nodejs 'node20' }
   environment {
     GIT_USER_NAME  = 'jenkins-ci'
     GIT_USER_EMAIL = 'ci@jenkins'
-    GH_REPO = 'https://github.com/Abhishek-RM12/bmi-calc.git'
+    GH_REPO = 'Abhishek-RM12/bmi-calc'
   }
   stages {
     stage('Checkout') {
